@@ -27,6 +27,19 @@ Dump account (for debug)
 
 	NSArray* accounts = [LKKeychain getItemsWithServices:@"SampleService"];
 
+Sample:
+	2011-05-14 07:16:28.847 LKKeychain[64739:40b] (
+	{
+		acct = "hashiguchi@lakesoft.jp";
+		agrp = test;
+		cdat = "0023-05-13 14:40:33 +0000";
+		mdat = "0023-05-13 14:40:33 +0000";
+		pdmn = ak;
+		svce = SampleService;
+		"v_Data" = <70617373 776f7264>;
+	},
+	:
+
 
 Customize
 ---------

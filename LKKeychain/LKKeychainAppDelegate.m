@@ -113,6 +113,7 @@
 - (IBAction)dump:(id)sender
 {
     self.itemList = [LKKeychain getItemsWithService:SERVICE_NAME];
+    NSLog(@"%@", self.itemList);
     [self.usernameTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
     [self.itemTable reloadData];
