@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LKKeychainTests' target in the 'LKKeychainTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CB191CB137D733D008F5062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB191CA137D733D008F5062 /* UIKit.framework */; };
+		4CB191CD137D733D008F5062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB191CC137D733D008F5062 /* Foundation.framework */; };
+		4CB191CF137D733D008F5062 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB191CE137D733D008F5062 /* CoreGraphics.framework */; };
+		4CB191D5137D733D008F5062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB191D3137D733D008F5062 /* InfoPlist.strings */; };
+		4CB191D8137D733D008F5062 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB191D7137D733D008F5062 /* main.m */; };
+		4CB191DB137D733D008F5062 /* LKKeychainAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB191DA137D733D008F5062 /* LKKeychainAppDelegate.m */; };
+		4CB191DE137D733D008F5062 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB191DC137D733D008F5062 /* MainWindow.xib */; };
+		4CB191E5137D733D008F5062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB191CA137D733D008F5062 /* UIKit.framework */; };
+		4CB191E6137D733D008F5062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB191CC137D733D008F5062 /* Foundation.framework */; };
+		4CB191E7137D733D008F5062 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB191CE137D733D008F5062 /* CoreGraphics.framework */; };
+		4CB191EF137D733E008F5062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB191ED137D733E008F5062 /* InfoPlist.strings */; };
+		4CB191F2137D733E008F5062 /* LKKeychainTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4CB191F1137D733E008F5062 /* LKKeychainTests.h */; };
+		4CB191F4137D733E008F5062 /* LKKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB191F3137D733E008F5062 /* LKKeychainTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CB191E8137D733D008F5062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CB191BD137D733D008F5062 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CB191C5137D733D008F5062;
+			remoteInfo = LKKeychain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CB191C6137D733D008F5062 /* LKKeychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKKeychain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB191CA137D733D008F5062 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CB191CC137D733D008F5062 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CB191CE137D733D008F5062 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CB191D2137D733D008F5062 /* LKKeychain-Info.plist */ = {isa = PBXFileReference; path = "LKKeychain-Info.plist"; sourceTree = "<group>"; };
+		4CB191D4137D733D008F5062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CB191D6137D733D008F5062 /* LKKeychain-Prefix.pch */ = {isa = PBXFileReference; path = "LKKeychain-Prefix.pch"; sourceTree = "<group>"; };
+		4CB191D7137D733D008F5062 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CB191D9137D733D008F5062 /* LKKeychainAppDelegate.h */ = {isa = PBXFileReference; path = LKKeychainAppDelegate.h; sourceTree = "<group>"; };
+		4CB191DA137D733D008F5062 /* LKKeychainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKKeychainAppDelegate.m; sourceTree = "<group>"; };
+		4CB191DD137D733D008F5062 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4CB191E4137D733D008F5062 /* LKKeychainTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKKeychainTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB191EC137D733E008F5062 /* LKKeychainTests-Info.plist */ = {isa = PBXFileReference; path = "LKKeychainTests-Info.plist"; sourceTree = "<group>"; };
+		4CB191EE137D733E008F5062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CB191F0137D733E008F5062 /* LKKeychainTests-Prefix.pch */ = {isa = PBXFileReference; path = "LKKeychainTests-Prefix.pch"; sourceTree = "<group>"; };
+		4CB191F1137D733E008F5062 /* LKKeychainTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKKeychainTests.h; sourceTree = "<group>"; };
+		4CB191F3137D733E008F5062 /* LKKeychainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKKeychainTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CB191C3137D733D008F5062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB191CB137D733D008F5062 /* UIKit.framework in Frameworks */,
+				4CB191CD137D733D008F5062 /* Foundation.framework in Frameworks */,
+				4CB191CF137D733D008F5062 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB191E0137D733D008F5062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB191E5137D733D008F5062 /* UIKit.framework in Frameworks */,
+				4CB191E6137D733D008F5062 /* Foundation.framework in Frameworks */,
+				4CB191E7137D733D008F5062 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CB191BB137D733D008F5062 = {
+			isa = PBXGroup;
+			children = (
+				4CB191D0137D733D008F5062 /* LKKeychain */,
+				4CB191EA137D733D008F5062 /* LKKeychainTests */,
+				4CB191C9137D733D008F5062 /* Frameworks */,
+				4CB191C7137D733D008F5062 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CB191C7137D733D008F5062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CB191C6137D733D008F5062 /* LKKeychain.app */,
+				4CB191E4137D733D008F5062 /* LKKeychainTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CB191C9137D733D008F5062 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB191CA137D733D008F5062 /* UIKit.framework */,
+				4CB191CC137D733D008F5062 /* Foundation.framework */,
+				4CB191CE137D733D008F5062 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CB191D0137D733D008F5062 /* LKKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				4CB191D9137D733D008F5062 /* LKKeychainAppDelegate.h */,
+				4CB191DA137D733D008F5062 /* LKKeychainAppDelegate.m */,
+				4CB191DC137D733D008F5062 /* MainWindow.xib */,
+				4CB191D1137D733D008F5062 /* Supporting Files */,
+			);
+			path = LKKeychain;
+			sourceTree = "<group>";
+		};
+		4CB191D1137D733D008F5062 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB191D2137D733D008F5062 /* LKKeychain-Info.plist */,
+				4CB191D3137D733D008F5062 /* InfoPlist.strings */,
+				4CB191D6137D733D008F5062 /* LKKeychain-Prefix.pch */,
+				4CB191D7137D733D008F5062 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CB191EA137D733D008F5062 /* LKKeychainTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CB191F1137D733E008F5062 /* LKKeychainTests.h */,
+				4CB191F3137D733E008F5062 /* LKKeychainTests.m */,
+				4CB191EB137D733E008F5062 /* Supporting Files */,
+			);
+			path = LKKeychainTests;
+			sourceTree = "<group>";
+		};
+		4CB191EB137D733E008F5062 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB191EC137D733E008F5062 /* LKKeychainTests-Info.plist */,
+				4CB191ED137D733E008F5062 /* InfoPlist.strings */,
+				4CB191F0137D733E008F5062 /* LKKeychainTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CB191C5137D733D008F5062 /* LKKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CB191F7137D733E008F5062 /* Build configuration list for PBXNativeTarget "LKKeychain" */;
+			buildPhases = (
+				4CB191C2137D733D008F5062 /* Sources */,
+				4CB191C3137D733D008F5062 /* Frameworks */,
+				4CB191C4137D733D008F5062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKKeychain;
+			productName = LKKeychain;
+			productReference = 4CB191C6137D733D008F5062 /* LKKeychain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CB191E3137D733D008F5062 /* LKKeychainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CB191FA137D733E008F5062 /* Build configuration list for PBXNativeTarget "LKKeychainTests" */;
+			buildPhases = (
+				4CB191DF137D733D008F5062 /* Sources */,
+				4CB191E0137D733D008F5062 /* Frameworks */,
+				4CB191E1137D733D008F5062 /* Resources */,
+				4CB191E2137D733D008F5062 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CB191E9137D733D008F5062 /* PBXTargetDependency */,
+			);
+			name = LKKeychainTests;
+			productName = LKKeychainTests;
+			productReference = 4CB191E4137D733D008F5062 /* LKKeychainTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CB191BD137D733D008F5062 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4CB191C0137D733D008F5062 /* Build configuration list for PBXProject "LKKeychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CB191BB137D733D008F5062;
+			productRefGroup = 4CB191C7137D733D008F5062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CB191C5137D733D008F5062 /* LKKeychain */,
+				4CB191E3137D733D008F5062 /* LKKeychainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CB191C4137D733D008F5062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB191D5137D733D008F5062 /* InfoPlist.strings in Resources */,
+				4CB191DE137D733D008F5062 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB191E1137D733D008F5062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB191EF137D733E008F5062 /* InfoPlist.strings in Resources */,
+				4CB191F2137D733E008F5062 /* LKKeychainTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CB191E2137D733D008F5062 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CB191C2137D733D008F5062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB191D8137D733D008F5062 /* main.m in Sources */,
+				4CB191DB137D733D008F5062 /* LKKeychainAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB191DF137D733D008F5062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB191F4137D733E008F5062 /* LKKeychainTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CB191E9137D733D008F5062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CB191C5137D733D008F5062 /* LKKeychain */;
+			targetProxy = 4CB191E8137D733D008F5062 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CB191D3137D733D008F5062 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB191D4137D733D008F5062 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CB191DC137D733D008F5062 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB191DD137D733D008F5062 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		4CB191ED137D733E008F5062 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB191EE137D733E008F5062 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CB191F5137D733E008F5062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CB191F6137D733E008F5062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		4CB191F8137D733E008F5062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LKKeychain/LKKeychain-Prefix.pch";
+				INFOPLIST_FILE = "LKKeychain/LKKeychain-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CB191F9137D733E008F5062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LKKeychain/LKKeychain-Prefix.pch";
+				INFOPLIST_FILE = "LKKeychain/LKKeychain-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CB191FB137D733E008F5062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LKKeychain.app/LKKeychain";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LKKeychainTests/LKKeychainTests-Prefix.pch";
+				INFOPLIST_FILE = "LKKeychainTests/LKKeychainTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4CB191FC137D733E008F5062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LKKeychain.app/LKKeychain";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LKKeychainTests/LKKeychainTests-Prefix.pch";
+				INFOPLIST_FILE = "LKKeychainTests/LKKeychainTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CB191C0137D733D008F5062 /* Build configuration list for PBXProject "LKKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB191F5137D733E008F5062 /* Debug */,
+				4CB191F6137D733E008F5062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CB191F7137D733E008F5062 /* Build configuration list for PBXNativeTarget "LKKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB191F8137D733E008F5062 /* Debug */,
+				4CB191F9137D733E008F5062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CB191FA137D733E008F5062 /* Build configuration list for PBXNativeTarget "LKKeychainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB191FB137D733E008F5062 /* Debug */,
+				4CB191FC137D733E008F5062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CB191BD137D733D008F5062 /* Project object */;
+}
