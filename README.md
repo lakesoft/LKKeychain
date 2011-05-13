@@ -12,16 +12,19 @@ LKKeychain class is a tiny keychain services wrapper. It provides:
 Usage
 -----
 Adding or updating account
+
 	[LKKeychain updatePassowrd:@"hdsI3823Khdf"
 		               account:@"hashiguchi@lakesoft.jp"
 					   service:@"SampleService"];
 If the account does not exists in keychain then new account is created. If exists, the password for the account is updated.
 
 Delete account
+
 	[LKKeychain deletePasswordWithAccount:@"hashiguchi@lakesoft.jp"
 								  service:@"SampleService"];
 
 Dump account (for debug)
+
 	NSArray* accounts = [LKKeychain getItemsWithServices:@"SampleService"];
 
 
@@ -44,6 +47,7 @@ Note
 You may want to see:
 
 Keychain Services Programming Guide
+
 http://developer.apple.com/library/ios/#documentation/Security/Conceptual/keychainServConcepts/01introduction/introduction.html
 
 
