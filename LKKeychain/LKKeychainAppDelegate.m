@@ -7,18 +7,24 @@
 //
 
 #import "LKKeychainAppDelegate.h"
+#import "LKKeychain.h"
+
+#define SERVICE_NAME    @"TestServeic"
 
 @implementation LKKeychainAppDelegate
 
 
 @synthesize window=_window;
+@synthesize usernameTextField, passwordTextField, itemTable, itemList;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
+    [self dump:nil];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -64,5 +70,53 @@
     [_window release];
     [super dealloc];
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.itemList count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"LKKeychainDumpCell";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                       reuseIdentifier:cellIdentifier] autorelease];
+    }
+
+    NSDictionary* dict = [self.itemList objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ / %@",
+                           [dict objectForKey:(id)kSecAttrAccount],
+                           [LKKeychain getPasswordWithAccount:[dict objectForKey:(id)kSecAttrAccount]
+                                                      service:SERVICE_NAME]];
+    cell.detailTextLabel.text = [[dict objectForKey:(id)kSecAttrCreationDate] description];
+
+    return cell;
+}
+
+
+
+- (IBAction)update:(id)sender
+{
+    [LKKeychain updatePassword:self.passwordTextField.text
+                       account:self.usernameTextField.text
+                       service:SERVICE_NAME];
+    [self dump:nil];
+}
+- (IBAction)delete:(id)sender
+{
+    [LKKeychain deletePasswordWithAccount:self.usernameTextField.text
+                                  service:SERVICE_NAME];
+    [self dump:nil];
+}
+- (IBAction)dump:(id)sender
+{
+    self.itemList = [LKKeychain getItemsWithService:SERVICE_NAME];
+    [self.usernameTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
+    [self.itemTable reloadData];
+}
+
 
 @end

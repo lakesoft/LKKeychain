@@ -20,6 +20,9 @@
 		4CB191EF137D733E008F5062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB191ED137D733E008F5062 /* InfoPlist.strings */; };
 		4CB191F2137D733E008F5062 /* LKKeychainTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4CB191F1137D733E008F5062 /* LKKeychainTests.h */; };
 		4CB191F4137D733E008F5062 /* LKKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB191F3137D733E008F5062 /* LKKeychainTests.m */; };
+		4CB19200137D737A008F5062 /* LKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB191FF137D737A008F5062 /* LKKeychain.m */; };
+		4CB19201137D737A008F5062 /* LKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB191FF137D737A008F5062 /* LKKeychain.m */; };
+		4CB19203137D79CE008F5062 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB19202137D79CD008F5062 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +40,22 @@
 		4CB191CA137D733D008F5062 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4CB191CC137D733D008F5062 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CB191CE137D733D008F5062 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4CB191D2137D733D008F5062 /* LKKeychain-Info.plist */ = {isa = PBXFileReference; path = "LKKeychain-Info.plist"; sourceTree = "<group>"; };
+		4CB191D2137D733D008F5062 /* LKKeychain-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKKeychain-Info.plist"; sourceTree = "<group>"; };
 		4CB191D4137D733D008F5062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CB191D6137D733D008F5062 /* LKKeychain-Prefix.pch */ = {isa = PBXFileReference; path = "LKKeychain-Prefix.pch"; sourceTree = "<group>"; };
+		4CB191D6137D733D008F5062 /* LKKeychain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKKeychain-Prefix.pch"; sourceTree = "<group>"; };
 		4CB191D7137D733D008F5062 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CB191D9137D733D008F5062 /* LKKeychainAppDelegate.h */ = {isa = PBXFileReference; path = LKKeychainAppDelegate.h; sourceTree = "<group>"; };
+		4CB191D9137D733D008F5062 /* LKKeychainAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKKeychainAppDelegate.h; sourceTree = "<group>"; };
 		4CB191DA137D733D008F5062 /* LKKeychainAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKKeychainAppDelegate.m; sourceTree = "<group>"; };
 		4CB191DD137D733D008F5062 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		4CB191E4137D733D008F5062 /* LKKeychainTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKKeychainTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CB191EC137D733E008F5062 /* LKKeychainTests-Info.plist */ = {isa = PBXFileReference; path = "LKKeychainTests-Info.plist"; sourceTree = "<group>"; };
+		4CB191EC137D733E008F5062 /* LKKeychainTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LKKeychainTests-Info.plist"; sourceTree = "<group>"; };
 		4CB191EE137D733E008F5062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CB191F0137D733E008F5062 /* LKKeychainTests-Prefix.pch */ = {isa = PBXFileReference; path = "LKKeychainTests-Prefix.pch"; sourceTree = "<group>"; };
+		4CB191F0137D733E008F5062 /* LKKeychainTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKKeychainTests-Prefix.pch"; sourceTree = "<group>"; };
 		4CB191F1137D733E008F5062 /* LKKeychainTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKKeychainTests.h; sourceTree = "<group>"; };
 		4CB191F3137D733E008F5062 /* LKKeychainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKKeychainTests.m; sourceTree = "<group>"; };
+		4CB191FE137D737A008F5062 /* LKKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKKeychain.h; sourceTree = "<group>"; };
+		4CB191FF137D737A008F5062 /* LKKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKKeychain.m; sourceTree = "<group>"; };
+		4CB19202137D79CD008F5062 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB19203137D79CE008F5062 /* Security.framework in Frameworks */,
 				4CB191CB137D733D008F5062 /* UIKit.framework in Frameworks */,
 				4CB191CD137D733D008F5062 /* Foundation.framework in Frameworks */,
 				4CB191CF137D733D008F5062 /* CoreGraphics.framework in Frameworks */,
@@ -79,7 +86,8 @@
 		4CB191BB137D733D008F5062 = {
 			isa = PBXGroup;
 			children = (
-				4CB191D0137D733D008F5062 /* LKKeychain */,
+				4CB191FD137D735A008F5062 /* LKKeychain */,
+				4CB191D0137D733D008F5062 /* TestApplication */,
 				4CB191EA137D733D008F5062 /* LKKeychainTests */,
 				4CB191C9137D733D008F5062 /* Frameworks */,
 				4CB191C7137D733D008F5062 /* Products */,
@@ -98,6 +106,7 @@
 		4CB191C9137D733D008F5062 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CB19202137D79CD008F5062 /* Security.framework */,
 				4CB191CA137D733D008F5062 /* UIKit.framework */,
 				4CB191CC137D733D008F5062 /* Foundation.framework */,
 				4CB191CE137D733D008F5062 /* CoreGraphics.framework */,
@@ -105,7 +114,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4CB191D0137D733D008F5062 /* LKKeychain */ = {
+		4CB191D0137D733D008F5062 /* TestApplication */ = {
 			isa = PBXGroup;
 			children = (
 				4CB191D9137D733D008F5062 /* LKKeychainAppDelegate.h */,
@@ -113,6 +122,7 @@
 				4CB191DC137D733D008F5062 /* MainWindow.xib */,
 				4CB191D1137D733D008F5062 /* Supporting Files */,
 			);
+			name = TestApplication;
 			path = LKKeychain;
 			sourceTree = "<group>";
 		};
@@ -145,6 +155,15 @@
 				4CB191F0137D733E008F5062 /* LKKeychainTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CB191FD137D735A008F5062 /* LKKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				4CB191FE137D737A008F5062 /* LKKeychain.h */,
+				4CB191FF137D737A008F5062 /* LKKeychain.m */,
+			);
+			name = LKKeychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +272,7 @@
 			files = (
 				4CB191D8137D733D008F5062 /* main.m in Sources */,
 				4CB191DB137D733D008F5062 /* LKKeychainAppDelegate.m in Sources */,
+				4CB19200137D737A008F5062 /* LKKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CB191F4137D733E008F5062 /* LKKeychainTests.m in Sources */,
+				4CB19201137D737A008F5062 /* LKKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

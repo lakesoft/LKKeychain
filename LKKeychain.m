@@ -1,29 +1,33 @@
 //
-//  KeychainServicesManager.m
-//  Anshinkun
+// Copyright (c) 2011 Hiroshi Hashiguchi
 //
-//  Created by Hiroshi Hashiguchi on 11/02/18.
-//  Copyright 2011 . All rights reserved.
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
 //
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+
 #import <Security/Security.h>
-#import "KeychainServicesManager.h"
+#import "LKKeychain.h"
 
-static KeychainServicesManager* sharedManager_;
-
-@implementation KeychainServicesManager
-
-+ (KeychainServicesManager*)sharedManager
-{
-	if (sharedManager_ == nil) {
-		sharedManager_ = [[KeychainServicesManager alloc] init];
-	}
-	return sharedManager_;
-}
-
+@implementation LKKeychain
 
 #pragma mark -
 #pragma mark API
-- (NSString*)getPasswordWithAccount:(NSString*)account service:(NSString*)service
++ (NSString*)getPasswordWithAccount:(NSString*)account service:(NSString*)service
 {
 	if (service == nil || account == nil) {
 		return nil;
@@ -52,7 +56,7 @@ static KeychainServicesManager* sharedManager_;
 	return password;
 }
 
-- (BOOL)updatePassword:(NSString*)password account:(NSString*)account service:(NSString*)service
++ (BOOL)updatePassword:(NSString*)password account:(NSString*)account service:(NSString*)service
 {
 	BOOL result = NO;
 	NSMutableDictionary* attributes = nil;
@@ -102,7 +106,7 @@ static KeychainServicesManager* sharedManager_;
 	return result;
 }
 
-- (BOOL)deletePasswordWithAccount:(NSString*)account service:(NSString*)service
++ (BOOL)deletePasswordWithAccount:(NSString*)account service:(NSString*)service
 {
 	BOOL result = NO;
 	NSMutableDictionary* query = [NSMutableDictionary dictionary];
@@ -121,7 +125,7 @@ static KeychainServicesManager* sharedManager_;
 	return result;
 }
 
-- (NSArray*)getItemsWithService:(NSString*)service
++ (NSArray*)getItemsWithService:(NSString*)service
 {
 	if (service == nil) {
 		return nil;

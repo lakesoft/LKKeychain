@@ -13,5 +13,12 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UITextField* usernameTextField;
+@property (nonatomic, retain) IBOutlet UITextField* passwordTextField;
+@property (nonatomic, retain) IBOutlet UITableView* itemTable;
+@property (nonatomic, retain) NSArray* itemList;
 
+- (IBAction)update:(id)sender;
+- (IBAction)delete:(id)sender;
+- (IBAction)dump:(id)sender;
 @end
