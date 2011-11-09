@@ -45,10 +45,12 @@
 									   (CFTypeRef*)&passwordData);
 	
 	if (err == noErr) {
-		 password = [[[NSString alloc] initWithData:passwordData
+		password = [[[NSString alloc] initWithData:passwordData
 													encoding:NSUTF8StringEncoding] autorelease];
+		[passwordData release];
 	} else if(err == errSecItemNotFound) {
 		// do nothing
+		[passwordData release];
 	} else {
 		NSLog(@"%s|SecItemCopyMatching: error(%ld)", __PRETTY_FUNCTION__, err);
 	}
@@ -143,7 +145,7 @@
 									   (CFTypeRef*)&result);
 	
 	if (err == noErr) {
-		return (NSArray*)result;
+		return [(NSArray*)result autorelease];
 	} else {
 		NSLog(@"%s|SecItemCopyMatching: error(%ld)", __PRETTY_FUNCTION__, err);
 		return nil;
