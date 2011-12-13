@@ -210,6 +210,9 @@
 /* Begin PBXProject section */
 		4CB191BD137D733D008F5062 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 4CB191C0137D733D008F5062 /* Build configuration list for PBXProject "LKKeychain" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -446,6 +449,7 @@
 				4CB191F9137D733E008F5062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CB191FA137D733E008F5062 /* Build configuration list for PBXNativeTarget "LKKeychainTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +458,7 @@
 				4CB191FC137D733E008F5062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
