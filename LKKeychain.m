@@ -54,10 +54,6 @@
 	} else {
 		NSLog(@"%s|SecItemCopyMatching: error(%ld)", __PRETTY_FUNCTION__, err);
 	}
-    if (passwordData) {
-        [passwordData release];
-        passwordData = nil;
-    }
 	
 	return password;
 }
