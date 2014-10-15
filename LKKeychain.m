@@ -52,7 +52,7 @@
 		// do nothing
 		[passwordData release];
 	} else {
-		NSLog(@"%s|SecItemCopyMatching: error(%ld)", __PRETTY_FUNCTION__, err);
+		NSLog(@"%s|SecItemCopyMatching: error(%d)", __PRETTY_FUNCTION__, (int)err);
 	}
 	
 	return password;
@@ -81,7 +81,7 @@
 		if (err == noErr) {
 			result = YES;
 		} else {
-			NSLog(@"%s|SecItemUpdate: error(%ld)", __PRETTY_FUNCTION__, err);
+			NSLog(@"%s|SecItemUpdate: error(%d)", __PRETTY_FUNCTION__, (int)err);
 		}
 		
 	} else if (err == errSecItemNotFound) {
@@ -98,11 +98,11 @@
 		if (err == noErr) {
 			result = YES;
 		} else {
-			NSLog(@"%s|SecItemAdd: error(%ld)", __PRETTY_FUNCTION__, err);
+			NSLog(@"%s|SecItemAdd: error(%d)", __PRETTY_FUNCTION__, (int)err);
 		}
 		
 	} else {
-		NSLog(@"%s|SecItemCopyMatching: error(%ld)", __PRETTY_FUNCTION__, err);
+		NSLog(@"%s|SecItemCopyMatching: error(%d)", __PRETTY_FUNCTION__, (int)err);
 	}
 	
 	return result;
@@ -121,7 +121,7 @@
 	if (err == noErr) {
 		result = YES;
 	} else {
-		NSLog(@"%s|SecItemDelete: error(%ld)", __PRETTY_FUNCTION__, err);
+		NSLog(@"%s|SecItemDelete: error(%d)", __PRETTY_FUNCTION__, (int)err);
 	}
 	
 	return result;
@@ -147,7 +147,7 @@
 	if (err == noErr) {
 		return [(NSArray*)result autorelease];
 	} else {
-		NSLog(@"%s|SecItemCopyMatching: error(%ld)", __PRETTY_FUNCTION__, err);
+		NSLog(@"%s|SecItemCopyMatching: error(%d)", __PRETTY_FUNCTION__, (int)err);
 		return nil;
 	}
 }
